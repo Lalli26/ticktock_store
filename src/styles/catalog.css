@@ -1,0 +1,43 @@
+:root{--tt-gold:#b08d57;--tt-ink:#111;--tt-line:#e7e3dc;--tt-bg:#faf8f5}
+.tt-wrap{max-width:1200px;margin:0 auto;padding:32px 20px;color:var(--tt-ink)}
+.tt-title{font-family:Georgia,serif;font-weight:500;letter-spacing:.02em}
+.tt-muted{color:#777}.tt-error{color:#b3261e}.tt-instock{color:#2e7d32}
+.tt-row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.tt-search{position:relative;margin:16px 0}
+.tt-search input{width:100%;box-sizing:border-box;padding:14px 44px 14px 16px;border:1px solid var(--tt-line);border-radius:999px;font-size:1rem;background:#fff}
+.tt-search button{position:absolute;right:14px;top:50%;transform:translateY(-50%);border:0;background:none;cursor:pointer}
+.tt-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tt-chips button{border:1px solid var(--tt-gold);background:#fff;border-radius:999px;padding:6px 12px;cursor:pointer}
+.tt-chips .tt-clear{background:var(--tt-ink);color:#fff;border-color:var(--tt-ink)}
+.tt-layout{display:grid;grid-template-columns:220px 1fr;gap:28px}
+.tt-fieldset{border:0;border-top:1px solid var(--tt-line);padding:12px 0}
+.tt-fieldset label{display:block;margin:6px 0;cursor:pointer}
+.tt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:22px}
+.tt-card{text-decoration:none;color:inherit;border:1px solid var(--tt-line);background:#fff;transition:.25s}
+.tt-card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(0,0,0,.08);border-color:var(--tt-gold)}
+.tt-card-img{aspect-ratio:1;background:var(--tt-bg);position:relative;display:grid;place-items:center;color:#aaa}
+.tt-card-img img{width:100%;height:100%;object-fit:cover}
+.tt-badge{position:absolute;top:10px;left:10px;background:var(--tt-ink);color:#fff;font-size:.72rem;padding:4px 8px;font-style:normal}
+.tt-card-body{padding:14px;display:grid;gap:6px}.tt-card-body h3{margin:0;font-size:1rem}
+.tt-card-body small{text-transform:uppercase;letter-spacing:.1em;color:var(--tt-gold)}
+.tt-stars span{color:#ccc}.tt-stars .on{color:var(--tt-gold)}.tt-stars small{color:#777;text-transform:none;letter-spacing:0}
+.tt-empty{text-align:center;padding:48px 16px;border:1px dashed var(--tt-line);background:var(--tt-bg)}
+.tt-empty button,.tt-form button,.tt-table button,.tt-list button,.tt-primary{padding:9px 16px;border:1px solid var(--tt-ink);background:#fff;cursor:pointer;margin-right:8px;font:inherit}
+.tt-form button[type=submit],.tt-primary{background:var(--tt-ink);color:#fff}
+.tt-primary:hover:not(:disabled){background:var(--tt-gold);border-color:var(--tt-gold)}
+.tt-primary:disabled{opacity:.5;cursor:not-allowed}
+.tt-detail{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin:20px 0 40px}
+.tt-hero-img{aspect-ratio:1;background:var(--tt-bg);display:grid;place-items:center}.tt-hero-img img{width:100%;height:100%;object-fit:cover}
+.tt-thumbs{display:flex;gap:8px;margin-top:10px}.tt-thumbs button{width:70px;height:70px;padding:0;border:2px solid transparent;cursor:pointer}
+.tt-thumbs button.on{border-color:var(--tt-gold)}.tt-thumbs img{width:100%;height:100%;object-fit:cover}
+.tt-price{font-size:1.6rem;font-weight:600}.tt-back{text-decoration:none;color:#555}
+.tt-specs{width:100%;margin-top:24px;border-collapse:collapse}.tt-specs th,.tt-specs td{text-align:left;padding:8px;border-bottom:1px solid var(--tt-line)}
+.tt-summary{display:flex;gap:40px;flex-wrap:wrap;margin:16px 0}.tt-avg{font-size:2.6rem;display:block}
+.tt-dist>div{display:grid;grid-template-columns:30px 180px 30px;gap:8px;align-items:center}
+.tt-dist i{height:8px;background:var(--tt-line);display:block}.tt-dist b{display:block;height:100%;background:var(--tt-gold)}
+.tt-form{display:grid;gap:10px;border:1px solid var(--tt-line);padding:18px;margin:16px 0;background:#fff}
+.tt-form input,.tt-form textarea{padding:10px;border:1px solid var(--tt-line);font:inherit}
+.tt-pick button{border:0!important;background:none!important;font-size:1.8rem;color:#ccc;padding:0!important;cursor:pointer}.tt-pick .on{color:var(--tt-gold)!important}
+.tt-list{list-style:none;padding:0}.tt-list li{border-bottom:1px solid var(--tt-line);padding:14px 0}
+.tt-table-wrap{overflow-x:auto}.tt-table{width:100%;border-collapse:collapse}.tt-table th,.tt-table td{padding:10px;border-bottom:1px solid var(--tt-line);text-align:left}
+@media(max-width:800px){.tt-layout,.tt-detail{grid-template-columns:1fr}.tt-filters{display:flex;gap:16px;flex-wrap:wrap}}
